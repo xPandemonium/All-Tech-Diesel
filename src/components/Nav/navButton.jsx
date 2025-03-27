@@ -15,9 +15,9 @@ export default function NavButton( {location, name} ) {
     }, [currentPage, location]);
 
     return(
-        <li className='block md:inline-flex'>
-            <Link to={`/${location}`} className={`text-white hover:text-red-dark font-bold text-lg nav-link py-2 px-4
-                ${active? 'bg-red-main rounded-sm' : ''}`}>{name}</Link>
+        <li className='block md:inline-flex text-center max-md:my-1.5'>
+            <Link to={`/${location}`} className={`block hover:text-red-dark font-bold text-lg nav-link md:py-2 md:px-4
+                ${active? 'bg-red-main rounded-lg' : ''}`}>{name}</Link>
         </li>
     )
 }

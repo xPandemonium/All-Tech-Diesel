@@ -4,10 +4,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import App from './App.jsx';
-import Home from './pages/Home.jsx';
-import Services from './pages/Services.jsx';
-import About from './pages/About.jsx';
-import Contact from './pages/Contact.jsx';
+import { Home, Services, About, Contact } from './pages/English/index.jsx';
+import { EsHome, EsServices, EsAbout, EsContact } from './pages/Spanish/index.jsx';
 
 const BrowserRouter = createBrowserRouter([
 
@@ -30,6 +28,22 @@ const BrowserRouter = createBrowserRouter([
       {
         path: '/Contact',
         element: <Contact />
+      },
+      {
+        path: '/es',
+        element: <EsHome />
+      },
+      {
+        path: '/es/Services',
+        element: <EsServices />
+      },
+      {
+        path: '/es/About',
+        element: <EsAbout />
+      },
+      {
+        path: '/es/Contact',
+        element: <EsContact />
       }
     ]
   }
